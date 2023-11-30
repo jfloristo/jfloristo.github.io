@@ -1,0 +1,102 @@
+@import "bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$primary-color: #7895B2;
+$lighter-gray: #222222;
+
+body {
+    background-color: #303030;
+}
+
+.navbar {
+    border-radius: 10px;
+    margin: 10px;
+    padding: auto;
+}
+
+.sticky-top {
+    margin: 10px;
+}
+
+.container {
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.container-row {
+    flex-direction: row !important;
+}
+
+.primary {
+    font-family: $font-family-sans-serif;
+    color: $primary-color;
+}
+
+.btn {
+    margin: 0.5em;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    font-family: $font-family-sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle {
+    height: 100vh;
+}
+
+.move {
+    transition: transform 0.5s ease-out;
+    transform: translateY(-45px);
+}
+
+.cursor {
+    background-color: $primary-color;
+    width: 2px;
+    height: 1em;
+    display: inline-block;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+}
+
+.fading {
+    animation: fadein 1s;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.pre-line{
+    white-space: pre-line;
+}
+
+.parent-div {
+    position: relative;
+}
+
+.child-div {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
