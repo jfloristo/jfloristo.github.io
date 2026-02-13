@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 $font-family-sans-serif: 'Google Sans', sans-serif;
-$primary-color: #f38181;
-$secondary-color: #fce38a;
+$primary-color: #3c3333;
+$secondary-color: #000000;
 $gray: #808080;
-$greenish: #eaffd0;
+$greenish: #f66c72;
 
 body {
-  background-color: #95e1d3;
+  background-color: #fcf6f0;
 }
 
 .navbar {
@@ -41,8 +41,8 @@ body {
 }
 
 .btn-primary {
-  background-color: $primary-color;
-  border-color: $primary-color;
+  background-color: $greenish;
+  border-color: $secondary-color;
   font-family: $font-family-sans-serif;
 }
 
@@ -131,7 +131,8 @@ body {
 
 .content-box {
   display: inline-flex;
-  max-width: 100%;
+  box-sizing: border-box;
+  width: min(520px, 100%);
 }
 
 .mid-img {
@@ -142,4 +143,8 @@ body {
 .long-img {
   max-height: 750px;
   width: auto;
+}
+
+.box-bg {
+  background-color: $greenish;
 }

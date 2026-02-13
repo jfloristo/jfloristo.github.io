@@ -1,13 +1,14 @@
 import glist from '../imgs/glist.png';
+import { Link } from 'react-router-dom';
 export default function YesNaYes() {
   return (
     <main className="primary position-relative">
       <div className="center p-3">
         <h1>Yahoo! Here's our itinerary for February 14:</h1>
       </div>
-      <div className="d-flex justify-content-center flex-row">
+      <div className="d-flex justify-content-center flex-wrap gap-4">
         <div className="d-flex justify-content-center">
-          <div className="content-box d-flex flex-column gap-2 [-3">
+          <div className="content-box d-flex flex-column gap-2 p-3">
             <h2>A lil sidequest:</h2>
             <div>
               <h5>WHAT: Grocery Run</h5>
@@ -33,6 +34,13 @@ export default function YesNaYes() {
             />
           </div>
         </div>
+      </div>
+      <div className="d-flex justify-content-center mt-3">
+        <Link to="/">
+          <button type="button" className="btn btn-primary">
+            home
+          </button>
+        </Link>
       </div>
     </main>
   );

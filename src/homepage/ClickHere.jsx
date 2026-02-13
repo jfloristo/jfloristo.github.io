@@ -6,9 +6,14 @@ export default function ClickHere({ isVisible }) {
   }
   return (
     <div className="container-row center fading">
+      <Link to="/LilSmth">
+        <button type="button" className="btn btn-primary">
+          a lil something for today
+        </button>
+      </Link>
       <Link to="/theAsk">
         <button type="button" className="btn btn-primary">
-          Kindly click here, my love
+          what are we doing tomorrow?
         </button>
       </Link>
     </div>
