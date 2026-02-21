@@ -15,11 +15,11 @@ export default function TypewriterText({ text, speed = 100 }) {
     }, [index, text, speed]);
 
     return (
-        <div className="relative inline-block">
-            <span className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+        <div className="relative inline-block mt-12 mb-4">
+            <span className="text-4xl md:text-5xl font-bold text-[#3c3333] tracking-tight">
                 {displayedText}
             </span>
-            <span className="animate-pulse text-4xl md:text-5xl font-extrabold text-blue-400">|</span>
+            <span className="animate-pulse text-4xl md:text-5xl font-light text-[#f66c72] ml-1">|</span>
         </div>
     );
 }

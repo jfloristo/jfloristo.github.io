@@ -1,13 +1,22 @@
 @import url('https://fonts.cdnfonts.com/css/google-sans');
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Holiday';
+  src: url('./assets/fonts/HolidayFree.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-heading: 'Google Sans', 'Product Sans', sans-serif;
+  --font-fancy: 'Holiday', sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-slate-900 text-slate-100 font-sans antialiased;
+    @apply bg-[#fcf6f0] text-[#3c3333] font-sans antialiased;
   }
 
   h1,
@@ -17,5 +26,9 @@
   h5,
   h6 {
     @apply font-heading;
+  }
+
+  h1 {
+    @apply font-fancy;
   }
 }

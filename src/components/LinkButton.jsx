@@ -6,12 +6,14 @@ export default function LinkButton({ title, url, icon: Icon, color }) {
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center w-full max-w-md p-4 mb-4 transition-all duration-300 bg-slate-800 border border-slate-700 rounded-xl hover:scale-[1.02] hover:bg-slate-700 shadow-lg group"
+            className="flex items-center w-full max-w-md p-4 mb-3 transition-colors duration-200 bg-white border border-[#3c3333]/20 hover:border-[#f66c72] group"
         >
-            <div className={`flex items-center justify-center w-10 h-10 rounded-full bg-slate-900 group-${color} transition-colors duration-300 mr-4`}>
-                {Icon && <Icon className="text-xl text-slate-300 group-hover:text-white" />}
+            <div className="flex items-center justify-center w-8 h-8 mr-4 text-[#3c3333]/60 group-hover:text-[#f66c72] transition-colors duration-200">
+                {Icon && <Icon className="text-2xl" />}
             </div>
-            <span className="text-lg font-medium text-slate-200 group-hover:text-white">{title}</span>
+            <span className="text-lg font-medium text-[#3c3333] group-hover:text-[#f66c72] transition-colors duration-200">
+                {title}
+            </span>
         </a>
     );
 }
